@@ -18,36 +18,12 @@
         </div>
         <div id="password_items">
             <div class="item">
-                <input id="size" name="size" type="number">
-                <label for="size">
-                    Quantidade de caracteres
-                </label>
-            </div>
-            <div class="item">
-                <input type="checkbox" name="include_uppercase" id="include_uppercase">
-                <label for="include_uppercase">
-                    Incluir letra maiúscula
-                </label>
-            </div>
-            <div class="item">
-                <input type="checkbox" name="include_lowercase" id="include_lowercase">
-                <label for="include_lowercase">
-                    Incluir letra minúscula
-                </label>
-            </div>
-            <div class="item">
-                <input type="checkbox" name="include_number" id="include_number">
-                <label for="include_number">
-                    Incluir número
-                </label>
-            </div>
-            <div class="item">
-                <input type="checkbox" name="include_caracter_especial" id="include_caracter_especial">
-                <label for="include_caracter_special">
-                    Incluir caracter especial
-                </label>
-            </div>
-            <button id="generate">Gerar Senhas</button>
+                <label><input type="checkbox" id="include_uppercase"> Incluir Maiúsculas</label><br>
+                <label><input type="checkbox" id="include_lowercase"> Incluir Minúsculas</label><br>
+                <label><input type="checkbox" id="include_number"> Incluir Números</label><br>
+                <label><input type="checkbox" id="include_caracter_special"> Incluir Caracteres Especiais</label><br>
+                <label>Tamanho da senha: <input type="number" id="size" min="3" max="12" value="8"></label><br>
+                <button id="generate">Gerar Senha</button>
         </div>
     </div>
     

@@ -1,6 +1,6 @@
 
 function getCharTypes(){
-    const uppercase = document.querySelector('#include_uppercase').isNaN;
+    const uppercase = document.querySelector('#include_uppercase').checked;
     const lowercase = document.querySelector('#include_lowercase').checked;
     const numbers = document.querySelector('#include_number').checked;
     const specialCaracter = document.querySelector('#include_caracter_special').checked;
@@ -14,7 +14,7 @@ function getCharTypes(){
         charTypes.push('abcdefghijklmnopqrstuvwxyz');
     }
     if(numbers){
-        charTypes.push('012345678');
+        charTypes.push('0123456789');
     }
     if(specialCaracter){
         charTypes.push('?/~^{}[]!@#$%&*()_-+=.:;');
@@ -47,14 +47,11 @@ function generetePassword(size, charTypes){
 
 
 document.querySelector('#generate').addEventListener('click', function () {
-   getCharTypes();
-
-   /* const size = getPasswordSize();
+    const size = getPasswordSize();
     const charTypes = getCharTypes();
     const newPassword = generetePassword(size, charTypes);
     document.querySelector('#password_container').classList.add('show');
     document.querySelector('#passwordSpan').textContent = newPassword;
-  */ 
 })
 
 
