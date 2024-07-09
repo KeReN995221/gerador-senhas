@@ -3,12 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerardor de Senhas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Keren | gerar senhas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container" class="container">
-        
+        <img src="images/cadeado.svg" id="password_img" alt="cadeado azul com escudo representando proteção as senhas que serão geradas">
+        <h1 id="titulo">Gerardor de Senhas</h1>
+        <div id="password_container">
+            <span id="passwordSpan"></span>
+            <button id="copy"><i class="fa-solid fa-copy"></i></button>
+            
+        </div>
+        <div id="password_items">
+            <div class="item">
+                <input id="size" name="size" type="number">
+                <label for="size">
+                    Quantidade de caracteres
+                </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_uppercase" id="include_uppercase">
+                <label for="include_uppercase">
+                    Incluir letra maiúscula
+                </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_lowercase" id="include_lowercase">
+                <label for="include_lowercase">
+                    Incluir letra minúscula
+                </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_number" id="include_number">
+                <label for="include_number">
+                    Incluir número
+                </label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="include_caracter_especial" id="include_caracter_especial">
+                <label for="include_caracter_special">
+                    Incluir caracter especial
+                </label>
+            </div>
+            <button id="generate">Gerar Senhas</button>
+        </div>
     </div>
     
 <script src="script.js"></script>
